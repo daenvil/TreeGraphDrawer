@@ -4,6 +4,8 @@ A control node that arranges its children and sub-children as a tree graph and o
 
 I did this for my own game, I'm not sure how useful this is as an addon, but I think it's a good tool to learn how to lay out trees or even to create other addons from this.
 
+![Example of the node being used](addons/treegraphdrawer/preview.png)
+
 ## To-do list for v1.0:
 
 - Bug fixing: there's still some cases where the tree isn't drawn completely correct so there must be some bug in the algorithm that I haven't found yet.
