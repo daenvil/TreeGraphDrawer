@@ -123,8 +123,8 @@ enum LineShape {
 			lines_shape = value
 			draw_tree_lines()
 
-const _OFFSET_KEY := &"treegraph_ws_offset"
-const _POS_KEY := &"treegraph_tree_position"
+const _OFFSET_KEY := &"_treegraph_ws_offset"
+const _POS_KEY := &"_treegraph_tree_position"
 const _LINE_KEY := &"_treegraph_line"
 var _lines: Array[Line2D] = []
 

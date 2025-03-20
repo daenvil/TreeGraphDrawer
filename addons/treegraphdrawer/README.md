@@ -31,9 +31,9 @@ You can customize how specific nodes behave by setting the following metadata ke
 - ``"treegraph_ignore_children"``: set a node's metadata with this key to true to ignore its children while building the tree, effectively treating it and its children as one single node (same effect as setting the ``"treegraph_ignore"`` key to true on all its children).
 - ``"treegraph_origin_point"``: set a node's metadata with this key to a ``Vector2`` to manually set its origin point.
 - ``"treegraph_no_incoming_lines"``: set a node's metadata with this key to true to avoid drawing connecting lines towards it from its parent.
-- ``treegraph_no_outgoing_lines``: set a node's metadata with this key to true to avoid drawing connecting lines from it to its children.
-- ``treegraph_lines_start_point``: set a node's metadata with this key to a ``Vector2`` to manually set the point from where connecting lines start.
-- ``treegraph_lines_end_point``: set a node's metadata with this key to a ``Vector2`` to manually set the point where connecting lines end.
+- ``"treegraph_no_outgoing_lines"``: set a node's metadata with this key to true to avoid drawing connecting lines from it to its children.
+- ``"treegraph_lines_start_point"``: set a node's metadata with this key to a ``Vector2`` to manually set the point from where connecting lines start.
+- ``"treegraph_lines_end_point"``: set a node's metadata with this key to a ``Vector2`` to manually set the point where connecting lines end.
 
 If a node is an instance of a scene file, the tree will ignore all of its children by default, treating it as a single tree node. To avoid this, set it as an editable instance (check "Editable Children" in the editor or use [``Node.set_editable_instance()``](https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-method-set-editable-instance) in a script).
 
