@@ -6,3 +6,4 @@
 *.import
 !addons/treegraphdrawer/icon.svg.import
 project.godot
+.editorconfig
