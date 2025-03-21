@@ -183,11 +183,11 @@ func v_vector() -> Vector2:
 
 func _get_visible_control_children(node: Control, clear_lines := false) -> Array[Control]:
 	var children: Array[Control]
-	if ((node.scene_file_path and not is_editable_instance(node))
-		or node.get_meta(META_KEY_IGNORE_CHILDREN, false)
-		or node.get_meta(META_KEY_IGNORE, false)):
+	if (node.get_meta(META_KEY_IGNORE_CHILDREN, false) or node.get_meta(META_KEY_IGNORE, false)):
 		return children
 	for c: Node in node.get_children():
+		if node != self and node.scene_file_path and not is_editable_instance(node) and c.owner == node:
+			continue ## Ignore children of packed scenes, unless they are set as editable
 		if c is Control and c.visible and not c.get_meta(META_KEY_IGNORE, false):
 			children.append(c)
 		if clear_lines and c is Line2D and c.has_meta(_LINE_KEY) and c.get_meta(_LINE_KEY):
@@ -263,7 +263,7 @@ func _set_global_positions(node: Control, v_space: Dictionary[int, float], depth
 func _draw_lines_from_node(node: Control) -> void:
 	for c: Control in _get_visible_control_children(node, true):
 		if (not c.get_meta(META_KEY_NO_INCOMING_LINES, false)
-				or not node.get_meta(META_KEY_NO_OUTGOING_LINES, false)):
+				and not node.get_meta(META_KEY_NO_OUTGOING_LINES, false)):
 			var line := Line2D.new()
 			line.width = lines_width
 			line.default_color = lines_color

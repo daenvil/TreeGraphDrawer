@@ -17,30 +17,30 @@ offset_right = 42.0
 offset_bottom = 26.0
 mouse_filter = 1
 script = ExtResource("1_0gi0j")
-metadata/_treegraph_tree_position = Vector2(0, -20)
+metadata/_treegraph_tree_position = Vector2(160.75, -20)
 metadata/treegraph_tree_position = Vector2(145.625, -20)
 metadata/_TGC_tree_position = Vector2(228, 0)
 
 [node name="TEST" type="Panel" parent="TreeGraphDrawer"]
 unique_name_in_owner = true
 layout_mode = 2
-offset_left = 38.75
-offset_right = 78.7502
+offset_left = 42.4999
+offset_right = 82.5001
 offset_bottom = 40.0
 metadata/_TGC_tree_position = Vector2(52, 64)
-metadata/_treegraph_tree_position = Vector2(0, 0)
+metadata/_treegraph_tree_position = Vector2(62.5, 0)
 metadata/treegraph_tree_position = Vector2(58.75, 0)
 
 [node name="TEST2" type="Panel" parent="TreeGraphDrawer/TEST"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = -51.25
+offset_left = -54.9999
 offset_top = 60.0
-offset_right = 23.75
+offset_right = 20.0001
 offset_bottom = 121.0
 pivot_offset = Vector2(33.5, 28)
 metadata/_TGC_tree_position = Vector2(52, 128)
-metadata/_treegraph_tree_position = Vector2(0, 20)
+metadata/_treegraph_tree_position = Vector2(25, 20)
 metadata/treegraph_tree_position = Vector2(25, 20)
 
 [node name="TEST3" type="Panel" parent="TreeGraphDrawer/TEST/TEST2"]
@@ -61,17 +61,17 @@ offset_top = 81.0
 offset_right = 82.5
 offset_bottom = 121.0
 metadata/_TGC_tree_position = Vector2(104, 192)
-metadata/_treegraph_tree_position = Vector2(30, 40)
+metadata/_treegraph_tree_position = Vector2(50, 40)
 metadata/treegraph_tree_position = Vector2(50, 40)
 
-[node name="@Line2D@46600" type="Line2D" parent="TreeGraphDrawer/TEST/TEST2"]
+[node name="@Line2D@26612" type="Line2D" parent="TreeGraphDrawer/TEST/TEST2"]
 show_behind_parent = true
 points = PackedVector2Array(37.5, 61, 12.5, 81)
 width = 2.0
 antialiased = true
 metadata/_treegraph_line = true
 
-[node name="@Line2D@46601" type="Line2D" parent="TreeGraphDrawer/TEST/TEST2"]
+[node name="@Line2D@26613" type="Line2D" parent="TreeGraphDrawer/TEST/TEST2"]
 show_behind_parent = true
 points = PackedVector2Array(37.5, 61, 62.5, 81)
 width = 2.0
@@ -80,99 +80,112 @@ metadata/_treegraph_line = true
 
 [node name="TestPackedScene" parent="TreeGraphDrawer/TEST" instance=ExtResource("2_gbj7f")]
 layout_mode = 1
-offset_left = 33.75
+offset_left = 37.5
 offset_top = 60.0
-offset_right = 33.75
+offset_right = 37.5
 offset_bottom = 60.0
-metadata/_treegraph_tree_position = Vector2(47.5, 20)
+metadata/_treegraph_tree_position = Vector2(100, 20)
 metadata/treegraph_tree_position = Vector2(92.5001, 20)
 
-[node name="@Line2D@46599" type="Line2D" parent="TreeGraphDrawer/TEST"]
+[node name="Panel" type="Panel" parent="TreeGraphDrawer/TEST/TestPackedScene"]
+layout_mode = 0
+offset_left = 9.91821e-05
+offset_top = 81.0
+offset_right = 40.0001
+offset_bottom = 121.0
+metadata/_treegraph_tree_position = Vector2(100, 40)
+
+[node name="@Line2D@26615" type="Line2D" parent="TreeGraphDrawer/TEST/TestPackedScene"]
 show_behind_parent = true
-points = PackedVector2Array(20.0001, 40, -13.75, 60)
+points = PackedVector2Array(20.0001, 40, 20.0001, 81)
 width = 2.0
 antialiased = true
 metadata/_treegraph_line = true
 
-[node name="@Line2D@46602" type="Line2D" parent="TreeGraphDrawer/TEST"]
+[node name="@Line2D@26611" type="Line2D" parent="TreeGraphDrawer/TEST"]
 show_behind_parent = true
-points = PackedVector2Array(20.0001, 40, 53.7501, 60)
+points = PackedVector2Array(20.0001, 40, -17.4999, 60)
+width = 2.0
+antialiased = true
+metadata/_treegraph_line = true
+
+[node name="@Line2D@26614" type="Line2D" parent="TreeGraphDrawer/TEST"]
+show_behind_parent = true
+points = PackedVector2Array(20.0001, 40, 57.5001, 60)
 width = 2.0
 antialiased = true
 metadata/_treegraph_line = true
 
 [node name="Panel2" type="Panel" parent="TreeGraphDrawer"]
 layout_mode = 2
-offset_left = 212.499
-offset_right = 252.499
+offset_left = 239.0
+offset_right = 279.0
 offset_bottom = 40.0
 tooltip_text = "test"
 metadata/_TGC_tree_position = Vector2(404, 64)
 metadata/TGC_tree_position = Vector2(32, 0)
-metadata/_treegraph_tree_position = Vector2(276.499, 0)
+metadata/_treegraph_tree_position = Vector2(259, 0)
 metadata/treegraph_tree_position = Vector2(232.499, 0)
 
 [node name="Panel25" type="Panel" parent="TreeGraphDrawer/Panel2"]
 layout_mode = 0
-offset_left = -89.9988
+offset_left = -109.0
 offset_top = 60.0
-offset_right = -50.0
+offset_right = -69.001
 offset_bottom = 100.0
 metadata/_TGC_tree_position = Vector2(208, 128)
-metadata/_treegraph_tree_position = Vector2(162.499, 20)
+metadata/_treegraph_tree_position = Vector2(149.999, 20)
 metadata/treegraph_tree_position = Vector2(142.5, 20)
-metadata/_treegraph_ws_offset = 42.4996
 metadata/treegraph_ws_offset = 42.4996
 
 [node name="Panel33" type="Panel" parent="TreeGraphDrawer/Panel2/Panel25"]
 layout_mode = 0
-offset_left = -0.000595093
+offset_left = -9.15527e-05
 offset_top = 81.0
-offset_right = 39.9994
+offset_right = 39.9999
 offset_bottom = 121.0
 metadata/_TGC_tree_position = Vector2(208, 192)
-metadata/_treegraph_tree_position = Vector2(162.499, 40)
+metadata/_treegraph_tree_position = Vector2(150, 40)
 metadata/treegraph_tree_position = Vector2(142.5, 40)
 
-[node name="@Line2D@46604" type="Line2D" parent="TreeGraphDrawer/Panel2/Panel25"]
+[node name="@Line2D@26617" type="Line2D" parent="TreeGraphDrawer/Panel2/Panel25"]
 show_behind_parent = true
-points = PackedVector2Array(19.9994, 40, 19.9994, 81)
+points = PackedVector2Array(19.9994, 40, 19.9999, 81)
 width = 2.0
 antialiased = true
 metadata/_treegraph_line = true
 
 [node name="LongPanel" type="Panel" parent="TreeGraphDrawer/Panel2"]
 layout_mode = 0
-offset_left = 2.4996
+offset_left = -40.9995
 offset_top = 60.0
-offset_right = 122.499
+offset_right = 78.9999
 offset_bottom = 100.0
 metadata/_TGC_tree_position = Vector2(386, 128)
-metadata/_treegraph_tree_position = Vector2(318.998, 20)
+metadata/_treegraph_tree_position = Vector2(258, 20)
 metadata/treegraph_tree_position = Vector2(274.998, 20)
-metadata/_treegraph_ws_offset = 48.4988
 metadata/treegraph_ws_offset = 24.4988
 
 [node name="Panel" type="Panel" parent="TreeGraphDrawer/Panel2/LongPanel"]
 layout_mode = 0
-offset_left = -18.0002
+offset_left = -18.0004
 offset_top = 81.0
-offset_right = 65.9998
+offset_right = 65.9996
 offset_bottom = 121.0
 metadata/_TGC_tree_position = Vector2(312, 192)
 metadata/TGC_tree_position = Vector2(32, 128)
-metadata/_treegraph_tree_position = Vector2(282.998, 40)
+metadata/_treegraph_tree_position = Vector2(222, 40)
 metadata/treegraph_tree_position = Vector2(238.998, 40)
 
 [node name="Panel2" type="Panel" parent="TreeGraphDrawer/Panel2/LongPanel"]
 layout_mode = 0
-offset_left = 75.9998
+offset_left = 75.9996
 offset_top = 81.0
 offset_right = 116.0
 offset_bottom = 121.0
 metadata/_TGC_tree_position = Vector2(460, 192)
 metadata/TGC_tree_position = Vector2(96, 128)
-metadata/_treegraph_tree_position = Vector2(354.998, 40)
+metadata/_treegraph_tree_position = Vector2(294, 40)
 metadata/treegraph_tree_position = Vector2(310.998, 40)
 
 [node name="Label" type="Label" parent="TreeGraphDrawer/Panel2/LongPanel"]
@@ -182,30 +195,29 @@ offset_bottom = 23.0
 text = "test"
 metadata/treegraph_ignore = true
 
-[node name="@Line2D@46606" type="Line2D" parent="TreeGraphDrawer/Panel2/LongPanel"]
+[node name="@Line2D@26619" type="Line2D" parent="TreeGraphDrawer/Panel2/LongPanel"]
 show_behind_parent = true
-points = PackedVector2Array(59.9998, 40, 23.9998, 81)
+points = PackedVector2Array(59.9997, 40, 23.9997, 81)
 width = 2.0
 antialiased = true
 metadata/_treegraph_line = true
 
-[node name="@Line2D@46607" type="Line2D" parent="TreeGraphDrawer/Panel2/LongPanel"]
+[node name="@Line2D@26620" type="Line2D" parent="TreeGraphDrawer/Panel2/LongPanel"]
 show_behind_parent = true
-points = PackedVector2Array(59.9998, 40, 95.9998, 81)
+points = PackedVector2Array(59.9997, 40, 95.9998, 81)
 width = 2.0
 antialiased = true
 metadata/_treegraph_line = true
 
 [node name="Panel4" type="Panel" parent="TreeGraphDrawer/Panel2"]
 layout_mode = 0
-offset_left = 156.998
+offset_left = 110.0
 offset_top = 60.0
-offset_right = 196.998
+offset_right = 150.0
 offset_bottom = 100.0
 metadata/_TGC_tree_position = Vector2(618, 128)
-metadata/_treegraph_tree_position = Vector2(481.497, 20)
+metadata/_treegraph_tree_position = Vector2(369, 20)
 metadata/treegraph_tree_position = Vector2(389.497, 20)
-metadata/_treegraph_ws_offset = 51.4987
 metadata/treegraph_ws_offset = 3.4986
 
 [node name="Panel5" type="Panel" parent="TreeGraphDrawer/Panel2/Panel4"]
@@ -215,7 +227,7 @@ offset_top = 81.0
 offset_right = 15.0
 offset_bottom = 121.0
 metadata/_TGC_tree_position = Vector2(564, 192)
-metadata/_treegraph_tree_position = Vector2(456.497, 40)
+metadata/_treegraph_tree_position = Vector2(344, 40)
 metadata/treegraph_tree_position = Vector2(364.497, 40)
 
 [node name="Panel2" type="Panel" parent="TreeGraphDrawer/Panel2/Panel4"]
@@ -226,40 +238,40 @@ offset_right = 65.0
 offset_bottom = 121.0
 metadata/_TGC_tree_position = Vector2(668, 192)
 metadata/TGC_tree_position = Vector2(96, 128)
-metadata/_treegraph_tree_position = Vector2(506.497, 40)
+metadata/_treegraph_tree_position = Vector2(394, 40)
 metadata/treegraph_tree_position = Vector2(414.497, 40)
 
-[node name="@Line2D@46609" type="Line2D" parent="TreeGraphDrawer/Panel2/Panel4"]
+[node name="@Line2D@26622" type="Line2D" parent="TreeGraphDrawer/Panel2/Panel4"]
 show_behind_parent = true
-points = PackedVector2Array(20, 40, -5, 81)
+points = PackedVector2Array(20, 40, -5.00003, 81)
 width = 2.0
 antialiased = true
 metadata/_treegraph_line = true
 
-[node name="@Line2D@46610" type="Line2D" parent="TreeGraphDrawer/Panel2/Panel4"]
+[node name="@Line2D@26623" type="Line2D" parent="TreeGraphDrawer/Panel2/Panel4"]
 show_behind_parent = true
 points = PackedVector2Array(20, 40, 45, 81)
 width = 2.0
 antialiased = true
 metadata/_treegraph_line = true
 
-[node name="@Line2D@46603" type="Line2D" parent="TreeGraphDrawer/Panel2"]
+[node name="@Line2D@26616" type="Line2D" parent="TreeGraphDrawer/Panel2"]
 show_behind_parent = true
-points = PackedVector2Array(20, 40, -69.9994, 60)
+points = PackedVector2Array(20, 40, -89.0004, 60)
 width = 2.0
 antialiased = true
 metadata/_treegraph_line = true
 
-[node name="@Line2D@46605" type="Line2D" parent="TreeGraphDrawer/Panel2"]
+[node name="@Line2D@26618" type="Line2D" parent="TreeGraphDrawer/Panel2"]
 show_behind_parent = true
-points = PackedVector2Array(20, 40, 62.4994, 60)
+points = PackedVector2Array(20, 40, 19.0002, 60)
 width = 2.0
 antialiased = true
 metadata/_treegraph_line = true
 
-[node name="@Line2D@46608" type="Line2D" parent="TreeGraphDrawer/Panel2"]
+[node name="@Line2D@26621" type="Line2D" parent="TreeGraphDrawer/Panel2"]
 show_behind_parent = true
-points = PackedVector2Array(20, 40, 176.998, 60)
+points = PackedVector2Array(20, 40, 130, 60)
 width = 2.0
 antialiased = true
 metadata/_treegraph_line = true

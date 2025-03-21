@@ -37,7 +37,7 @@ You can customize how specific nodes behave by setting the following metadata ke
 - ``"treegraph_lines_start_point"``: set a node's metadata with this key to a ``Vector2`` to manually set the point from where connecting lines start.
 - ``"treegraph_lines_end_point"``: set a node's metadata with this key to a ``Vector2`` to manually set the point where connecting lines end.
 
-If a node is an instance of a scene file, the tree will ignore all of its children by default, treating it as a single tree node. To avoid this, set it as an editable instance (check "Editable Children" in the editor or use [``Node.set_editable_instance()``](https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-method-set-editable-instance) in a script).
+If a node is an instance of a scene file, the tree will ignore its packed children by default, treating it as a single tree node. To avoid this, set it as an editable instance (check "Editable Children" in the editor or use [``Node.set_editable_instance()``](https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-method-set-editable-instance) in a script).
 
 ## Why not a Container?
 
